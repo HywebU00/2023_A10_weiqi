@@ -3754,6 +3754,81 @@ img {
   .scrollToTop:hover, .scrollToTop:focus-visible {
     box-shadow: none;
   }
+  .l-anchor {
+    position: fixed;
+    top: calc(50vh - 150px);
+    left: 2.57143%;
+    z-index: 9;
+    font-size: 0.875rem;
+  }
+  @media (max-width: 1500px) {
+    .l-anchor {
+      left: -0.5%;
+    }
+  }
+  @media (max-width: 900px) {
+    .l-anchor {
+      left: -0.5%;
+      top: calc(50vh - 200px);
+    }
+  }
+  @media (max-width: 767px) {
+    .l-anchor {
+      left: -1%;
+      top: 100px;
+    }
+  }
+  .l-anchor.is-scroll .l-anchor__body .l-pagetop {
+    display: none;
+  }
+  .l-anchor.is-pagetop .l-anchor__body .l-scroll {
+    display: none;
+  }
+  .l-anchor.is-white .l-anchor__body p.l-scroll a, .l-anchor.is-white .l-anchor__body p.l-pagetop a {
+    color: #fff;
+  }
+  .l-anchor.is-white .l-anchor__body p.l-scroll a:after, .l-anchor.is-white .l-anchor__body p.l-pagetop a:after {
+    background-color: #fff;
+  }
+  .l-anchor.is-white .l-anchor__body p.l-scroll a:hover, .l-anchor.is-white .l-anchor__body p.l-pagetop a:hover {
+    color: #e7a356;
+  }
+  .l-anchor .l-anchor__body {
+    position: relative;
+  }
+  .l-anchor .l-anchor__body p {
+    display: inline-block;
+    overflow: hidden;
+    margin-right: 2.42857%;
+    writing-mode: vertical-rl;
+    position: relative;
+  }
+  .l-anchor .l-anchor__body p.l-scroll a {
+    padding-bottom: 50px;
+    position: relative;
+  }
+  .l-anchor .l-anchor__body p.l-scroll a:after {
+    content: "";
+    height: 40px;
+    width: 1px;
+    background-color: #000;
+    position: absolute;
+    right: 50%;
+    bottom: 0;
+  }
+  .l-anchor .l-anchor__body p.l-pagetop a {
+    padding-top: 50px;
+    position: relative;
+  }
+  .l-anchor .l-anchor__body p.l-pagetop a:after {
+    content: "";
+    height: 40px;
+    width: 1px;
+    background-color: #000;
+    position: absolute;
+    right: 50%;
+    top: 0;
+  }
   [tooltip] {
     position: relative;
   }
@@ -9142,7 +9217,7 @@ img {
     padding-left: 20px;
   }
   .dailyJournalBlock .dailyJournalGroup .itembox .item02 .JournalListBox .JournalList a .listBox .title {
-    font-size: 1.25rem;
+    font-size: 1.125rem;
     font-weight: bolder;
     overflow: hidden;
     text-overflow: -o-ellipsis-lastline;
@@ -9331,7 +9406,7 @@ img {
     transition: 0.5s;
   }
   .dailyJournalBlock .dailyJournalGroup .itembox .item03 .JournalPhotoBox .JournalList a .title {
-    font-size: 1.25rem;
+    font-size: 1.125rem;
     font-weight: bolder;
     overflow: hidden;
     text-overflow: -o-ellipsis-lastline;
@@ -9565,7 +9640,7 @@ img {
   .competitionResultsBlock .competitionResultsGroup .itembox .competitionResultsList .title {
     color: #fff;
     font-weight: bolder;
-    font-size: 1.875rem;
+    font-size: 1.5625rem;
     line-height: 1.3em;
     margin-bottom: 30px;
     overflow: hidden;
@@ -9579,7 +9654,7 @@ img {
   }
   @media screen and (max-width: 991px) {
     .competitionResultsBlock .competitionResultsGroup .itembox .competitionResultsList .title {
-      font-size: 1.5625rem;
+      font-size: 1.375rem;
     }
   }
   .competitionResultsBlock .competitionResultsGroup .itembox .competitionResultsList .date {

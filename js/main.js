@@ -969,9 +969,9 @@ function scrollToTop(obj) {
   });
 }
 
-scrollToTop({
-  name: document.querySelector('.scrollToTop'), // --- 監聽的對象
-});
+// scrollToTop({
+//   name: document.querySelector('.scrollToTop'), // --- 監聽的對象
+// });
 
 // -----------------------------------------------------------------------
 // -----  語言模組 dropdwon   ---------------------------------------------
