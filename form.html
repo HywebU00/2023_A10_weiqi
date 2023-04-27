@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="zh-Hant" class="no-js">
+
+<head>
+  <meta name="robots" content="noindex" />
+  <!-- 使用 noindex 禁止 Google 搜尋建立索引，套版時請工程師刪掉這行 -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>HyUI kit</title>
+  <!-- WOW動畫-->
+  <link href="css/animate.css" rel="stylesheet" />
+  <!-- style css -->
+  <link rel="stylesheet" href="css/style.css" />
+  <!-- favicon -->
+  <link href="images/favicon.png" rel="icon" type="image/x-icon" />
+  <!-- google font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <!-- 直接跳主內容區 -->
+  <a class="goCenter" href="#center" tabindex="1">按Enter到主內容區</a>
+  <!-- wrapper Start -->
+  <div class="wrapper">
+    <!-- header Start -->
+    <header class="header">
+      <div class="container">
+        <a class="accessKey" href="#aU" id="aU" accesskey="U" title="網站標題" tabindex="2">:::</a>
+        <h1>
+          <a href="index.html"><img src="images/logo.png" alt="網站標題" /></a>
+        </h1>
+        <!-- noscript -->
+        <noscript>
+          您的瀏覽器不支援JavaScript語法，JavaScript語法並不影響內容的陳述。您可使用按鍵盤上的Ctrl鍵+ (+)鍵放大/(-)鍵縮小來改變字型大小；回到上一頁可使用瀏覽器提供的 Alt+左方向鍵(←) 快速鍵功能；列印可使用瀏覽器提供的(Ctrl+P)功能。您的瀏覽器，不支援script語法，若您的瀏覽器無法支援請點選此超連結
+          <a href="#">網站導覽</a>
+        </noscript>
+        <!-- menu Start -->
+        <nav class="menu mainMenu" role="navigation" aria-label="About page">
+          <ul>
+            <li>
+              <a href="#">比賽活動</a>
+              <!-- <ul>
+                            <li><a href="#">第二層選單</a></li>
+                            <li><a href="#">第二層選單</a></li>
+                            <li><a href="#">第二層選單</a></li>
+                            <li><a href="#">第二層選單</a></li>
+                          </ul> -->
+            </li>
+            <li><a href="#">棋協簡介</a></li>
+            <li>
+              <a href="#">級/段位名錄</a>
+            </li>
+            <li>
+              <a href="#">團體會員</a>
+            </li>
+            <li>
+              <a href="#">廣告申請</a>
+            </li>
+            <li>
+              <a href="#">公告事項</a>
+            </li>
+          </ul>
+        </nav>
+        <!-- menu End -->
+        <div class="share_fb"><a href="#"><img src="images/share_fb.png" alt="fb"></a></div>
+      </div>
+    </header>
+    <!-- header End -->
+    <!-- main Start -->
+    <main id="center" class="main innerPage">
+      <!-- 內頁新增一個classname-->
+      <a class="accessKey" href="#aC" id="aC" accesskey="C" title="主要內容區">:::</a>
+      <div class="container">
+        <!-- 主要內容區 -->
+        <div class="centerBlock">
+          <!-- breadcrumb路徑 -->
+          <nav aria-label="Breadcrumb" class="breadcrumb">
+            <ul>
+              <li><a href="#">首頁</a></li>
+              <li><a href="#">節點</a></li>
+              <li aria-current="page">節點</li>
+            </ul>
+          </nav>
+          <!-- h2節點 -->
+          <h2 class="title">廣告申請</h2>
+          <div class="functionPanel">
+            <!-- function功能區塊 -->
+            <div class="function">
+              <ul>
+                <li class="back">
+                  <a href="javascript:history.back()">回上一頁</a>
+                </li>
+                <!-- <li class="print"><a href="#">友善列印</a></li>
+                        <li class="forward"><a href="#">轉寄友人</a></li> -->
+              </ul>
+            </div>
+          </div>
+          <section class="formBlock">
+            <form action="">
+              <h3>請填寫以下申請資料，我們將盡快為您處理</h3>
+              <div class="flexForm formGrid">
+                <div class="formGrp">
+                  <!-- 使用aria-required屬性指出必填的表單欄位 -->
+                  <label for="username" aria-required="true" class="formTitle">姓名<abbr class="necessary" title="為必填(選)欄位,不能為空白。">*</abbr></label>
+                  <div class="formContent">
+                    <input name="" type="text" value="" title="請輸入姓名" />
+                  </div>
+                </div>
+                <div class="formGrp">
+                  <!-- 使用aria-required屬性指出必填的表單欄位 -->
+                  <label for="username" aria-required="true" class="formTitle">申請單位<abbr class="necessary" title="為必填(選)欄位,不能為空白。">*</abbr></label>
+                  <div class="formContent">
+                    <input name="" type="text" value="" title="請輸入申請單位" />
+                  </div>
+                </div>
+                <div class="formGrp">
+                  <!-- 使用aria-required屬性指出必填的表單欄位 -->
+                  <label for="username" aria-required="true" class="formTitle">聯絡人<abbr class="necessary" title="為必填(選)欄位,不能為空白。">*</abbr></label>
+                  <div class="formContent">
+                    <input name="" type="text" value="" title="請輸入聯絡人" />
+                  </div>
+                </div>
+                <div class="formGrp">
+                  <label for="phone" class="formTitle" aria-required="true">手機號碼<abbr class="necessary" title="為必填(選)欄位,不能為空白。">*</abbr></label>
+                  <div class="formContent">
+                    <input name="phone" id="phone" type="tel" title="請輸入電話" />
+                  </div>
+                </div>
+                <div class="formGrp">
+                  <label for="" class="formTitle">電話號碼(日)</label>
+                  <div class="formContent formInline tel">
+                    <input name="" type="tel" value="" placeholder="886" title="請輸入國碼" />
+                    <input name="" type="tel" value="" placeholder="12345678" title="請輸入電話" />
+                  </div>
+                </div>
+                <div class="formGrp">
+                  <label for="" class="formTitle">電話號碼(夜)</label>
+                  <div class="formContent formInline tel">
+                    <input name="" type="tel" value="" placeholder="886" title="請輸入國碼" />
+                    <input name="" type="tel" value="" placeholder="12345678" title="請輸入電話" />
+                    <button type="button" class="btn btnNormal">同上</button>
+                  </div>
+                </div>
+                <div class="formGrp">
+                  <label for="email" class="formTitle" aria-required="true">電子信箱<abbr class="necessary" title="為必填(選)欄位,不能為空白。">*</abbr></label>
+                  <div class="formContent">
+                    <div class="input_i">
+                      <input name="email" type="email" id="email" title="請輸入E-mail" />
+                      <i class="i_mail_dark"></i>
+                    </div>
+                    <div class="notice">這是一般提醒訊息區塊</div>
+                    <div class="noticeWarning">
+                      這似乎不是一個正常的Email格式
+                      <a role="button" href="#" aria-label="關閉" class="close"><img src="images/basic/icon_close.svg" alt="" /></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="formGrp">
+                  <label for="" class="formTitle">廣告網址</label>
+                  <div class="formContent ">
+
+                    <input name="" type="text" value="" title="請輸入廣告網址" />
+                  </div>
+                </div>
+                <div class="formGrp">
+                  <div class="formTitle">需求說明</div>
+                  <div class="formContent">
+                    <textarea name="" id="" cols="30" rows="10"></textarea>
+                  </div>
+                </div>
+                <div class="btnGrp formInline">
+                  <button type="button" class="btn btnReset">清除重填</button>
+                  <button type="button" class="btn btnSubmit">送出訊息</button>
+                </div>
+              </div>
+            </form>
+          </section>
+          <!-- 備註 start -->
+          <div class="remarkBlock">
+
+            <div class="title">廣告圖檔規格</div>
+            <div class="remarkBox">寬110 X 高 60pixel</div>
+            <div class="title">租放價格</div>
+            <div class="remarkBox">
+              <div class="tableWrapper">
+                <table>
+                  <tbody>
+                    <tr>
+                      <th scope="row">日期</th>
+                      <td>月</td>
+                      <td>季</td>
+                      <td>半年</td>
+                      <td>年</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">費用</th>
+                      <td>NT$1200</td>
+                      <td>NT$3000</td>
+                      <td>NT$4800</td>
+                      <td> NT$7200</td>
+                    </tr>
+
+                  </tbody>
+                </table>
+              </div>
+              廣告設計與圖檔費用另計
+            </div>
+
+            <div class="title">委刊人同意以下事項</div>
+            <div class="remarkBox">
+              <ol>
+                <li>本網站並保有拒絕刊登的權利。</li>
+                <li>委刊人提供之身分資料均為真實；所提供之廣告及本表格內容，如違反相關法規或造成損害，概由委刊人自行負責，與本報無涉。若因廣告而造成本報損害，
+                  委刊人同意賠償本網站一切損失及費用(含律師費及訴訟費)。</li>
+                <li>委刊人同意如因委刊廣告發生訴訟時，均以台灣台北地方法院為第一審管轄法院。</li>
+              </ol>
+            </div>
+          </div>
+          <!-- 備註 End -->
+        </div>
+      </div>
+    </main>
+
+    <!-- footer Start-->
+    <footer>
+      <div class="container">
+        <a class="accessKey" href="#aZ" id="aZ" accesskey="Z" title="頁尾區">:::</a>
+
+        <div class="footerInfo">
+          <p>
+            協會地址：台北市樂利路69號1樓　電話：(02)2735-7515、(02)2735-7519　傳真：(02)2735-7513
+            <br />
+            高雄分公司：高雄市新興區中正三路55號26樓之5 TEL：07-2223606
+          </p>
+          <p class="Copyright">版權所有 © 中華民國圍棋協會 &nbsp;&nbsp;&nbsp;網站建置：凌網科技 HyWeb Tech.</p>
+
+          <!-- <span class="update">更新日期:<em>2018/01/01</em></span>
+                <span class="counter">累計瀏覽人次:<em>46476653</em></span> -->
+        </div>
+      </div>
+    </footer>
+    <!-- footer End -->
+  </div>
+  <a href="javascript:;" class="scrollToTop">SCROLL DOWN</a>
+
+  <!-- lazyload -->
+  <script src="vendor/lazyload/lazyload.js"></script>
+  <!-- picturefill -->
+  <script src="vendor/picturefill/picturefill.min.js" async></script>
+  <!-- fancybox -->
+  <script src="vendor/fancybox/fancybox.js"></script>
+  <!-- swiper -->
+  <script src="vendor/swiper/swiper-bundle.min.js"></script>
+  <!-- wow js -->
+  <script src="js/wow.min.js"></script>
+  <script>
+    new WOW().init();
+  </script>
+  <!-- main js-->
+  <script src="js/main.js"></script>
+  <!-- js -->
+  <script src="js/customize.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,279 @@
+// lp  activeSearch
+.activeSearch {
+  margin: 0 0 1em;
+
+  font-size: 1rem;
+  .formGrp {
+    margin: 0;
+    width: 100%;
+
+    .formTitle {
+      align-self: center;
+      font-size: 1.125rem;
+      @include screen('xsMobile') {
+        text-align: center;
+      }
+    }
+    .btnGrp {
+      @include screen('xsMobile') {
+        width: 100%;
+        padding: 0.3em;
+        input {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+// 段位名錄
+.duanListBlock {
+  text-align: center;
+  margin-bottom: 2em;
+  .duanListGroup {
+    display: flex;
+    flex-wrap: wrap;
+    .duanListItem {
+      flex: 0 0 auto;
+      flex-basis: 23%;
+      margin: 0 1% 1.5em;
+      @include screen('tablet') {
+        flex-basis: 31%;
+        margin: 0 1.16% 1.5em;
+      }
+      @include screen('mobile') {
+        flex-basis: 48%;
+        margin: 0 1% 1.5em;
+      }
+      @media (max-width: 520px) {
+        flex-basis: 100%;
+        margin: 0 0 1.5em;
+      }
+
+      a {
+        display: block;
+        padding: 40px 20px;
+        background-color: #000;
+        text-align: center;
+        color: #fff;
+        transition: 0.5s;
+        .picimg {
+          margin-bottom: 1em;
+          height: 128px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          img {
+          }
+        }
+        .title {
+          font-size: 1.75rem;
+          font-weight: bolder;
+          margin-bottom: 0.5em;
+        }
+        .certificationNum {
+          font-family: 'Noto Sans', sans-serif;
+          margin-bottom: 1em;
+          line-height: 1.8em;
+          span {
+            display: block;
+          }
+        }
+        .more {
+          padding: 0.4em 0.2em 0;
+          width: 60%;
+          background-color: $colorPrimary;
+          display: block;
+          margin: 0 auto;
+          border-radius: 50px;
+          transition: 0.5s;
+          img {
+            width: 26px;
+            height: 26px;
+          }
+        }
+        &:hover {
+          background-color: darken($color: $colorPrimary, $amount: 5);
+          .more {
+            background-color: #000;
+          }
+        }
+      }
+    }
+  }
+}
+// 查詢名錄
+.searchDirectoryBlock {
+  text-align: center;
+  display: flex;
+  @include screen('mobile') {
+    flex-wrap: wrap;
+  }
+  .titleEBox {
+    font-size: rem(24);
+    padding: 0 0 0.5em;
+    border-bottom: 2px solid #000;
+    display: inline-block;
+    margin: 0 0 0.5em;
+    font-weight: bolder;
+    @include screen('mobile') {
+      font-size: rem(24);
+    }
+    @include screen('xsMobile') {
+      font-size: rem(22);
+    }
+  }
+  .titleCBox {
+    font-size: rem(30);
+    font-weight: border;
+    line-height: 1em;
+    margin-bottom: 0.5em;
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 700;
+    letter-spacing: -0.03em;
+    @include screen('mobile') {
+      font-size: rem(36);
+      line-height: 1.1em;
+    }
+    @include screen('xsMobile') {
+      font-size: rem(30);
+    }
+  }
+  .goCoachGroup,
+  .goRefereeGroup {
+    flex: 0 0 auto;
+    flex-basis: 48%;
+    margin: 0 1%;
+    background-color: #f5f5f5;
+    padding: 4em 2em 2em;
+    @include screen('mobile') {
+      flex-basis: 100%;
+      margin: 0 0 2em;
+    }
+    @media (max-width: 450px) {
+      padding: 4em 1em 2em;
+    }
+    .searchBox {
+      padding: 1em 0;
+
+      .formGrid {
+        border-top: none;
+        .formGrp {
+          border-bottom: none;
+
+          label {
+            flex: 0 0 auto;
+            flex-basis: 70px;
+            max-width: 70px;
+            font-size: 1rem;
+            font-weight: bold;
+            margin: 0;
+            padding: 0.3em;
+            text-align: left;
+          }
+          .formContent {
+            flex-basis: calc(100% - 70px);
+            max-width: calc(100% - 70px);
+            input {
+              margin: 0 0.3em;
+            }
+          }
+          @media (max-width: 450px) {
+            flex-wrap: wrap;
+            label {
+              flex-basis: 100%;
+              max-width: 100%;
+            }
+            .formContent {
+              flex-basis: 100%;
+              max-width: 100%;
+            }
+          }
+        }
+        .btnGrp {
+          width: calc(100% - 70px);
+          margin-left: 70px;
+          .btn {
+            border-radius: 50px;
+          }
+        }
+      }
+      .directoryList {
+        width: 100%;
+        font-size: 1rem;
+        font-weight: bold;
+        ul {
+          margin: 0;
+          padding: 0;
+          list-style-type: none;
+          display: flex;
+          flex-wrap: wrap;
+          li {
+            flex: 1 1 auto;
+            flex-basis: 31%;
+            margin: 0 1.16% 5px;
+            a {
+              display: block;
+              background-color: #bab2a8;
+              color: #000;
+              padding: 0.5em;
+              transition: 0.5s;
+              &:hover,
+              &.active {
+                background-color: #e7a356;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.formBlock {
+  padding: 3em 3em 2em;
+  margin-bottom: 2em;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  @include screen('mobile') {
+    padding: 2em;
+  }
+}
+// 備註
+.remarkBlock {
+  padding: 3em;
+
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  font-size: rem(18);
+  @include screen('mobile') {
+    padding: 2em;
+  }
+  @include screen('xsMobile') {
+    padding: 2em 1em;
+  }
+  .title {
+    font-weight: bolder;
+    margin-bottom: 1em;
+    color: #fff;
+    background-color: $colorPrimary;
+    padding: 0.8em 1em;
+    display: block;
+  }
+  .remarkBox {
+    margin: 0 0 2em;
+    .tableWrapper {
+      margin-bottom: 0.5em;
+      table {
+        td {
+          text-align: center;
+        }
+      }
+    }
+  }
+  ol {
+    margin: 0 0 0 30px;
+    padding: 0;
+
+    li {
+      margin: 0 0 0.5em;
+      line-height: 1.5em;
+    }
+  }
+}

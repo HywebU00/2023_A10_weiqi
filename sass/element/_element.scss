@@ -1,0 +1,70 @@
+// scrollTop
+.scrollToTop {
+  width: 160px;
+  height: 30px;
+  // outline: 1px solid red;
+  text-align: left;
+  color: #000;
+  line-height: 30px;
+  text-decoration: none;
+  position: fixed;
+  top: 30%;
+  left: -20px;
+  transition: 0.3s ease-out;
+  z-index: 9;
+  font-size: 0.875rem;
+  transform: rotate(90deg);
+  @media (max-width: 1500px) {
+    left: -60px;
+  }
+  &:after {
+    content: '';
+    height: 1px;
+    width: 40px;
+    background-color: #000;
+    position: absolute;
+    right: 0;
+    top: 15px;
+  }
+  &:hover,
+  &:focus-visible {
+    box-shadow: none;
+  }
+}
+
+//元素對齊 align
+// .align-left{
+//   text-align: left;
+// }
+// .align-center{
+//   text-align: center;
+// }
+// .align-right{
+//   text-align: right;
+// }
+// .align-top{
+//   vertical-align: top;
+// }
+// .align-middle{
+//   vertical-align: middle;
+// }
+// .align-bottom{
+//   vertical-align: bottom;
+// }
+// .align-baseline{
+//   vertical-align: baseline;
+// }
+
+// $fileTypePic: doc, docx, odt, xls, xlsx, csv, ods, ppt, pptx, odp, zip, txt, mov, mp3, jpg, wmv, mp4, pdf, other ;
+
+// @each $fileTypePic in $fileTypePic {
+//   a.file_#{$fileTypePic} {
+//     background: url(../images/basic/icon_#{$fileTypePic}.png) no-repeat center center;
+//     width: 26px;
+//     height: 28px;
+//     font-size: 0;
+//     overflow: hidden;
+//     vertical-align: middle;
+//     background-size: contain;
+//   }
+// }

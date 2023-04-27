@@ -1,0 +1,48 @@
+.category {
+  text-align: left;
+  margin: 1em auto;
+  position: relative;
+  z-index: 1;
+  ul {
+    @include liReset;
+    display: flex;
+    flex-wrap: wrap;
+
+    li {
+      margin: 0px 3px 3px 0px;
+      display: block;
+    }
+  }
+  a {
+    border: 1px solid #aaa;
+    padding: 0.5em 1em;
+    display: block;
+    color: #333;
+    font-size: 1.125rem;
+    box-sizing: border-box;
+    background-color: #fff;
+    &:before {
+      content: '#';
+      margin-right: 0.25em;
+    }
+    &:hover,
+    &:focus,
+    &.active {
+      color: #fff;
+      background: lighten($colorPrimary, 5);
+      border: 1px solid lighten($colorPrimary, 5);
+      box-shadow: none;
+    }
+    span {
+      font-size: 0.813em;
+      &:before {
+        content: '(';
+        display: inline-block;
+      }
+      &:after {
+        content: ')';
+        display: inline-block;
+      }
+    }
+  }
+}
