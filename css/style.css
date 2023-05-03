@@ -10360,7 +10360,7 @@ img {
   }
   .activeSearch .formGrp .datePick > input[type=date] {
     width: 10em;
-    height: 30px;
+    height: 40px;
   }
   @media screen and (max-width: 575px) {
     .activeSearch .formGrp .datePick > input[type=date] {

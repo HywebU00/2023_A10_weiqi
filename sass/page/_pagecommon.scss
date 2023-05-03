@@ -17,7 +17,7 @@
     .datePick {
       & > input[type='date'] {
         width: 10em;
-        height: 30px;
+        height: 40px;
 
         @include screen('xsMobile') {
           width: calc(100% - 0.6em);
