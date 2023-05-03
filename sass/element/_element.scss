@@ -49,6 +49,17 @@
     left: -1%;
     top: 100px;
   }
+  //修改的ＳＣＳＳ --- start
+  &.is-scroll.is-pagetop {
+    .l-anchor__body {
+      .l-pagetop {
+        display: block;
+      }
+    }
+  }
+
+  //修改的ＳＣＳＳ --- end
+
   &.is-scroll {
     .l-anchor__body {
       .l-pagetop {
@@ -78,6 +89,14 @@
             }
           }
         }
+      }
+    }
+  }
+  //修改的ＳＣＳＳ --- start
+  @media (max-width: 767px) {
+    &.is-white {
+      .l-anchor__body p.l-pagetop a {
+        color: #fff;
       }
     }
   }

@@ -3778,6 +3778,9 @@ img {
       top: 100px;
     }
   }
+  .l-anchor.is-scroll.is-pagetop .l-anchor__body .l-pagetop {
+    display: block;
+  }
   .l-anchor.is-scroll .l-anchor__body .l-pagetop {
     display: none;
   }
@@ -3792,6 +3795,11 @@ img {
   }
   .l-anchor.is-white .l-anchor__body p.l-scroll a:hover, .l-anchor.is-white .l-anchor__body p.l-pagetop a:hover {
     color: #e7a356;
+  }
+  @media (max-width: 767px) {
+    .l-anchor.is-white .l-anchor__body p.l-pagetop a {
+      color: #fff;
+    }
   }
   .l-anchor .l-anchor__body {
     position: relative;
