@@ -14,6 +14,16 @@
         text-align: center;
       }
     }
+    .datePick {
+      & > input[type='date'] {
+        width: 10em;
+        height: 30px;
+
+        @include screen('xsMobile') {
+          width: calc(100% - 0.6em);
+        }
+      }
+    }
     .btnGrp {
       @include screen('xsMobile') {
         width: 100%;
@@ -194,6 +204,9 @@
           margin-left: 70px;
           .btn {
             border-radius: 50px;
+          }
+          @media (max-width: 450px) {
+            margin: 0 auto;
           }
         }
       }

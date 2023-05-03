@@ -10358,6 +10358,15 @@ img {
       text-align: center;
     }
   }
+  .activeSearch .formGrp .datePick > input[type=date] {
+    width: 10em;
+    height: 30px;
+  }
+  @media screen and (max-width: 575px) {
+    .activeSearch .formGrp .datePick > input[type=date] {
+      width: calc(100% - 0.6em);
+    }
+  }
   @media screen and (max-width: 575px) {
     .activeSearch .formGrp .btnGrp {
       width: 100%;
@@ -10569,6 +10578,12 @@ img {
   .searchDirectoryBlock .goCoachGroup .searchBox .formGrid .btnGrp .btn,
   .searchDirectoryBlock .goRefereeGroup .searchBox .formGrid .btnGrp .btn {
     border-radius: 50px;
+  }
+  @media (max-width: 450px) {
+    .searchDirectoryBlock .goCoachGroup .searchBox .formGrid .btnGrp,
+    .searchDirectoryBlock .goRefereeGroup .searchBox .formGrid .btnGrp {
+      margin: 0 auto;
+    }
   }
   .searchDirectoryBlock .goCoachGroup .searchBox .directoryList,
   .searchDirectoryBlock .goRefereeGroup .searchBox .directoryList {
