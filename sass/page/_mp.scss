@@ -58,17 +58,17 @@
     }
   }
   > .container {
-    padding-left: 160px;
+    padding-left: 18%;
     position: relative;
-    @include screen('notebook') {
-      padding-left: 110px;
-    }
-    @include screen('tablet') {
-      padding-left: 80px;
-    }
-    @include screen('mobile') {
-      padding-left: 60px;
-    }
+    // @include screen('notebook') {
+    //   padding-left: 800px;
+    // }
+    // @include screen('tablet') {
+    //   padding-left: 80px;
+    // }
+    // @include screen('mobile') {
+    //   padding-left: 60px;
+    // }
     @include screen('xsMobile') {
       padding-left: 60px;
     }
@@ -78,6 +78,7 @@
 .mpSlider {
   position: relative;
   padding: 0 0 0;
+
   // messengerLink
   .messengerLink {
     position: absolute;
@@ -275,7 +276,7 @@
         height: 100px;
       }
       .txt {
-        font-size: rem(18);
+        font-size: 1.625rem;
         padding: 30px 130px 30px 20px;
         width: 100%;
         margin: 0 auto;
@@ -284,7 +285,7 @@
         @include textOverflow;
         @include screen('mobile') {
           max-width: 100%;
-          padding: 20px 20px;
+          padding: 10px 20px 20px;
         }
         span {
           color: $colorImportant;

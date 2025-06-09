@@ -94,6 +94,11 @@ accordionFunction({
     slidesPerView: 1,
     loop: false,
     speed: 3000,
+    autoplay: {
+      delay: 4000,
+      pauseOnMouseEnter: true,
+      disableOnInteraction: false,
+    },
     // 切換點
     pagination: {
       el: '.marqueeSlider .swiperDots',
