@@ -302,3 +302,30 @@ accordionFunction({
     },
   });
 })();
+// cookie;
+document.addEventListener('DOMContentLoaded', function () {
+  const cookieBlock = document.querySelector('.cookieblock');
+  const agreeBtn = document.querySelector('.cookiebox_btn');
+  const closeBtn = document.querySelector('.cookieblock_close-btn');
+  const bgOverlay = document.querySelector('.cookieblock_bg');
+  const body = document.body;
+
+  // 若 cookieblock 存在，先加上 bodyfixed
+  if (cookieBlock) {
+    body.classList.add('bodyfixed');
+  }
+
+  function closeCookieBlock() {
+    if (cookieBlock) {
+      cookieBlock.classList.add('hide');
+      body.classList.remove('bodyfixed'); // 移除 bodyfixed
+      setTimeout(() => {
+        cookieBlock.remove(); // 移除 cookieblock 元素
+      }, 400); // 時間需與 CSS transition 時間一致
+    }
+  }
+
+  if (agreeBtn) agreeBtn.addEventListener('click', closeCookieBlock);
+  if (closeBtn) closeBtn.addEventListener('click', closeCookieBlock);
+  if (bgOverlay) bgOverlay.addEventListener('click', closeCookieBlock);
+});

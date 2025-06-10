@@ -7521,6 +7521,15 @@ img {
     margin: 0;
     padding: 0;
   }
+  body.bodyfixed {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    overflow-y: hidden;
+    margin: 0;
+    padding: 0;
+  }
   .row {
     margin-left: 0;
     margin-right: 0;
@@ -9875,6 +9884,96 @@ img {
   }
   .page_line.line04 {
     left: 92%;
+  }
+  .cookieblock {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 99;
+  }
+  .cookieblock .cookieblock_bg {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 100;
+  }
+  .cookieblock .cookiebox {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    height: 30vh;
+    max-height: 100%;
+    z-index: 999;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    max-width: 100%;
+    background-color: #fff;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  .cookieblock .cookiebox .cookiebox_text .title {
+    font-size: 1.75em;
+    letter-spacing: 0.05em;
+    margin-bottom: 1em;
+  }
+  .cookieblock .cookiebox .cookiebox_text .cookiebox_btn {
+    flex: 0 0 auto;
+    width: auto;
+  }
+  .cookieblock .cookiebox .cookiebox_text a {
+    color: #bc7c43;
+    text-decoration: underline;
+  }
+  .cookieblock .cookieblock_close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    background-color: #fff;
+    z-index: 1000;
+  }
+  .cookieblock .cookieblock_close .cookieblock_close-btn {
+    border: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+  .cookieblock .cookieblock_close .cookieblock_close-btn:before {
+    content: "";
+    width: 20px;
+    height: 2px;
+    background-color: #666;
+    position: absolute;
+    transform: rotate(45deg);
+  }
+  .cookieblock .cookieblock_close .cookieblock_close-btn:after {
+    content: "";
+    width: 20px;
+    height: 2px;
+    background-color: #666;
+    position: absolute;
+    transform: rotate(-45deg);
+  }
+  .cookieblock {
+    transition: opacity 0.4s ease-in-out, visibility 0.4s ease-in-out;
+    opacity: 1;
+    visibility: visible;
+  }
+  .cookieblock.hide {
+    opacity: 0;
+    visibility: hidden;
   }
   h1.title,
   h2.title {
